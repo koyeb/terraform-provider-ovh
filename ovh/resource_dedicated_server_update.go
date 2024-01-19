@@ -21,11 +21,15 @@ func resourceDedicatedServerUpdate() *schema.Resource {
 				Description: "The internal name of your dedicated server.",
 				Required:    true,
 			},
-
 			"boot_id": {
 				Type:        schema.TypeInt,
 				Description: "The boot id of your dedicated server.",
 				Computed:    true,
+				Optional:    true,
+			},
+			"boot_script": {
+				Type:        schema.TypeString,
+				Description: "The boot script of your dedicated server.",
 				Optional:    true,
 			},
 			"monitoring": {

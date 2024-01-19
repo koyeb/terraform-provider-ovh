@@ -202,6 +202,7 @@ func dataSourceDedicatedServerRead(d *schema.ResourceData, meta interface{}) err
 	d.SetId(ds.Name)
 	d.Set("urn", ds.URN)
 	d.Set("boot_id", ds.BootId)
+	d.Set("boot_script", ds.BootScript)
 	d.Set("commercial_range", ds.CommercialRange)
 	d.Set("datacenter", ds.Datacenter)
 	d.Set("ip", ds.Ip)
